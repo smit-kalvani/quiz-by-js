@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <ul>
+        <li>
+            <h1> JS Quiz </h1>
+            <h1 class="mark">Total Mark : 20</h1>
+        </li>
+        <!-- first Qustion -->
+        <h2>
+            1. Inside which HTML element do we put the
+            Java script ?
+        </h2>
+
+        <div class="box-1">
+            <form id="form">
+                <input type="radio" name="MCQ" value="script">
+                <label>script</label>
+                <br>
+                <input type="radio" name="MCQ" value="java script">
+                <label>java script</label>
+                <br>
+                <input type="radio" name="MCQ" value="scripting">
+                <label>scripting</label>
+                <br>
+                <input type="radio" name="MCQ" value="js">
+                <label> js </label>
+                <br>
+
+                <button type="submit">submit</button>
+
+
+            </form>
+
+            <!-- second Qustion -->
+
+            <h2>2. What is full-form of JS ?</h2>
+            <form id="formtwo">
+                <input type="radio" name="MCQtwo" value="html">
+                <label>html</label>
+                <br>
+                <input type="radio" name="MCQtwo" value="css">
+                <label>css</label>
+                <br>
+                <input type="radio" name="MCQtwo" value="javascript">
+                <label>javascript</label>
+                <br>
+                <input type="radio" name="MCQtwo" value="none">
+                <label> none </label>
+                <br>
+
+                <button type="submit">submit</button>
+
+
+            </form>
+
+            <!-- third Qustion -->
+
+            <h2> 3. How many type of Java Script ? </h2>
+            <form id="formthr">
+                <input type="radio" name="MCQthr" value="five">
+                <label>five</label>
+                <br>
+                <input type="radio" name="MCQthr" value="six">
+                <label>six</label>
+                <br>
+                <input type="radio" name="MCQthr" value="seven">
+                <label>seven</label>
+                <br>
+                <input type="radio" name="MCQthr" value="eight">
+                <label>eight</label>
+                <br>
+
+                <button type="submit">submit</button>
+
+                <!-- fourth qustions -->
+                <h2>4. What is the output of "10" + 20 in JavaScript?
+                </h2>
+                <form id="formfor">
+                    <input type="radio" name="MCQfor" value="30">
+                    <label>30</label>
+                    <br>
+                    <input type="radio" name="MCQfor" value="20">
+                    <label>20</label>
+                    <br>
+                    <input type="radio" name="MCQfor" value="1020">
+                    <label>1020</label>
+                    <br>
+                    <input type="radio" name="MCQfor" value="2010">
+                    <label>2010</label>
+                    <br>
+
+                    <button type="submit">submit</button>
+
+
+                </form>
+
+
+
+            </form>
+        </div>
+    </ul>
+    <script>
+
+        //  first Qustion 
+
+        let count = 0;
+
+        form.addEventListener("submit", (event) => {
+            event.preventDefault()
+            let ans = document.querySelector('input[name="MCQ"]:checked').value
+
+            console.log(ans)
+
+            let result = 'script';
+            if (ans === result) {
+
+                console.log(true)
+
+                count++;
+
+                console.log(`count your score=${count}`)
+            }
+            else {
+                console.log(false)
+            }
+        })
+
+        // second Qustion 
+
+        formtwo.addEventListener("submit", (event) => {
+            event.preventDefault()
+            let anstwo = document.querySelector('input[name="MCQtwo"]:checked').value
+
+            console.log(anstwo)
+
+            let resulttwo = 'javascript';
+            if (anstwo === resulttwo) {
+
+                console.log(true)
+
+                count++;
+
+                console.log(`count your score=${count}`)
+            }
+            else {
+                console.log(false)
+            }
+
+        })
+
+        // third qustions
+
+        formthr.addEventListener("submit", (event) => {
+            event.preventDefault()
+            let ansthr = document.querySelector('input[name="MCQthr"]:checked').value
+
+            console.log(ansthr)
+
+            let resultthr = 'eight';
+            if (ansthr === resultthr) {
+
+                console.log(true)
+
+                count++;
+
+                console.log(`count your score=${count}`)
+            }
+            else {
+                console.log(false)
+            }
+        })
+
+        // fourth qustion
+
+        formfor.addEventListener("submit", (event) => {
+            event.preventDefault()
+            let ansfor = document.querySelector('input[name="MCQfor"]:checked').value
+
+            console.log(ansfor)
+
+            let resultfor = '1020';
+            if (ansfor === resultfor) {
+
+                console.log(true)
+
+                count++;
+
+                console.log(`count your score=${count}`)
+            }
+            else {
+                console.log(false)
+            }
+        })
+
+
+    </script>
+
+</body>
+
+</html>
